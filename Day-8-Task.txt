@@ -1,0 +1,55 @@
+1)https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
+2)https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+________________________________________________
+3Q)Write a “person” class to hold all the details.
+
+Answer:-
+
+class Person {
+    constructor(name, location) {
+        this.name = name;
+        this.location = location;
+    }
+    getPerson() { 
+        return ` ${this.name} ${this.location} `;
+    }
+    greetings() {
+        console.log("Welcome to Method Greeting");
+    }
+    getFood() {
+        console.log("I would like to eat pizza");
+    }
+
+    static displayWalk() {
+        console.log("Iam static method with name Display Walk");
+    }
+}
+
+var person1 = new Person("Kiran", "Hyderabad");
+var food = new Person("Rice"); 
+
+console.log(person1.getPerson());
+console.log(person1.greetings());
+console.log(food.getFood());
+console.log(Person.displayWalk());
+________________________________________________
+4Q)write a class to calculate uber price.
+
+Answer:-
+
+class Uber {
+    constructor(kms, rateperkm) {
+        this.kms = kms;
+        this.rateperkm = rateperkm;
+    }
+    getUberPrice() {
+        var res = this.kms * this.rateperkm;
+        return res;
+    }
+}
+
+var obj = new Uber("10", "12");
+console.log(obj.getUberPrice());
+
+
