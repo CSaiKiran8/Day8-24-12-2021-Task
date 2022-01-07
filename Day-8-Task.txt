@@ -1,6 +1,68 @@
-1)https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+1Q)https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
 
-2)https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+Answer:-
+
+class Movie {
+    constructor(title, studio, rating ="PG" ){
+        this.title = title;
+        this.studio = studio;
+        this.rating = rating;
+    }
+    getDetails() {
+        return ` Movie: ${this.title}, Studio: ${this.studio}, Rating: ${this.rating} `
+    }
+    getPG(arr) {
+        let movies = [];
+    }
+}
+
+var obj = new Movie("Casino Royale", "Eon Productions", "PG­13");
+
+console.log(obj.getDetails());
+console.log(obj.getPG([]));
+
+_______________________________________________
+2Q)https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+Answer:-
+
+class Circle {
+    constructor(radius, color){
+        this.radius = radius;
+        this.color = color;
+    }
+    toString() {
+        return ` radius:${this.radius} color:${this.color} `
+    }
+    setRadius(radius) {
+        this.radius = radius;
+    }
+    getRadius() {
+        return this.radius;
+    }
+    setColor(color) {
+        this.color = color;
+    }
+    getColor() {
+        return this.color;
+    }
+    getArea(radius) {
+        var area = 3.14*radius*radius;
+        return ` Area:${area} `;
+    }
+    getCircumference(radius) {
+        var cmf = 2*3.14*radius;
+        return ` Circumference:${cmf} `;
+    }
+}
+
+var obj1 = new Circle("5.0");
+var obj2 = new Circle("5.0", "red");
+console.log(obj1.getRadius());
+
+console.log(obj2.toString());
+console.log(obj2.getArea(5.0));
+console.log(obj2.getCircumference(5.0));
 ________________________________________________
 3Q)Write a “person” class to hold all the details.
 
